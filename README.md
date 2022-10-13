@@ -15,6 +15,10 @@ $base64filecontent | Out-File $outfile
 Copy the contents of the outfile to the variable: base64filedata in the index.html file.
 
 Start temp python http service on port 80 to host website.
+```bash
+python3 -m http.server 80
+```
+
 Once a visitor browse to the site the JavaScript in the HTML page will download the file instantly without requiring the user to click any download links.
 
 ![Sample Page Loaded](Capture.png)
