@@ -12,7 +12,7 @@ $base64filecontent = [Convert]::ToBase64String([IO.File]::ReadAllBytes( $filepat
 $base64filecontent | Out-File $outfile
 ```
 
-Copy the contents of the outfile to the variablebase64filedata in the index.html file.
+Copy the contents of the outfile to the variable: base64filedata in the index.html file.
 
 Start temp python http service on port 80 to host website.
 Once a visitor browse to the site the JavaScript in the HTML page will download the file instantly without requiring the user to click any download links.
